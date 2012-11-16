@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/usr/local/share'
+let g:netrw_dirhist_2='/home/cnzuclo/.vim/bundle/showpairs/plugin'
+let g:netrw_dirhist_3='/home/cnzuclo/.toodledo'
+let g:netrw_dirhist_4='/home/cnzuclo/Downloads/gcc-4.6.3/libstdc++-v3/config'
+let g:netrw_dirhist_5='/home/cnzuclo/workspace/tools/svnhistory/svnhistory'
+let g:netrw_dirhist_6='/home/cnzuclo/workspace/svnhistory/svnhistory'
+let g:netrw_dirhist_7='/home/cnzuclo/workspace/tps/branches/Pj119/packages/tpsw/cmd/cbctrequest'
+let g:netrw_dirhist_8='/home/cnzuclo/workspace/tps/branches/Pj119/executables'
+let g:netrw_dirhist_9='/neuro/0.1_Projects/Pj119 Daisy'
