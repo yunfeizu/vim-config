@@ -993,6 +993,7 @@ function g:exES_PostUpdate()
         " create vimwiki files
         call exUtility#CreateVimwikiFiles ()
     endif
+    
 endfunction
 
 " ------------------------------------------------------------------ 

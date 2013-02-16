@@ -372,6 +372,10 @@ function g:exES_UpdateEnvironment() " <<<
         let &tags = escape(g:exES_Tag, " ")
     endif
 
+    "source cutom_setting
+    let g:custom_setting_file = g:exES_CWD.'/'.g:exES_vimfiles_dirname.'/custom_setting.vim'
+    exe 'source '.g:custom_setting_file
+
     " open exProject window
     if exists( 'g:exES_Project' )
         silent exec g:exES_project_cmd.' '.g:exES_Project
@@ -424,8 +428,8 @@ function g:exES_UpdateEnvironment() " <<<
     if exists('*g:exES_PostUpdate')
         call g:exES_PostUpdate()
     endif
-endfunction " >>>
 
+endfunction " >>>
 "/////////////////////////////////////////////////////////////////////////////
 " commands
 "/////////////////////////////////////////////////////////////////////////////

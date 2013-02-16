@@ -5,8 +5,31 @@ set autoindent
 set smartindent
 set cindent
 
-call pathogen#infect()
-call pathogen#helptags()
+filetype off
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle
+Bundle 'gmarik/vundle'
+
+"my Bundle here:
+"
+" original repos on github
+Bundle 'kien/ctrlp.vim'
+Bundle 'sukima/xmledit'
+Bundle 'sjl/gundo.vim'
+Bundle 'jiangmiao/auto-pairs'
+Bundle 'klen/python-mode'
+
+" vim-scripts repos
+Bundle 'YankRing.vim'
+Bundle 'vcscommand.vim'
+Bundle 'ShowPairs'
+Bundle 'Auto-Pairs'
+Bundle 'SudoEdit.vim'
+"................
+filetype plugin indent on
 
 " silent exec "colorscheme desertEx"
 silent exec "colorscheme molokai"
@@ -50,7 +73,6 @@ map <silent> <F2> :ExtsGoDirectly<CR>
 map <silent> <F3> :CSCD<CR>
 map <silent> <M-F3> :ExcsParseFunction<CR>
 
-nnoremap <unique> <leader>ft :NERDTreeFind<CR>
 
 let g:LookupFile_DisableDefaultMap=1
 let g:ctrlp_extensions = ['buffertag']
@@ -63,3 +85,14 @@ nnoremap <F7> :YRShow<CR>
 
 
 nmap <Leader>N <Plug>MarkAllClear
+
+
+" setting for EasyGrep
+
+let g:EasyGrepReplaceWindowMode=2
+let g:EasyGrepMode = 2
+let g:EasyGrepRecursive = 1
+
+
+nnoremap <unique> <leader>ft :NERDTreeFind<CR>
+let g:NERDTreeMapToggleZoom = "<space>"
